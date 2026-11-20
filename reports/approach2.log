@@ -1,0 +1,21 @@
+k= 2 inertia=23,604 silhouette=0.0474
+k= 3 inertia=23,081 silhouette=0.0284
+k= 4 inertia=22,713 silhouette=0.0245
+k= 5 inertia=22,441 silhouette=0.0248
+k= 6 inertia=22,130 silhouette=0.0283
+k= 7 inertia=21,934 silhouette=0.0259
+k= 8 inertia=21,772 silhouette=0.0305
+k= 9 inertia=21,305 silhouette=0.0394
+k=10 inertia=21,221 silhouette=0.0395
+k=11 inertia=21,053 silhouette=0.0377
+k=12 inertia=20,948 silhouette=0.0389
+k=13 inertia=20,749 silhouette=0.0394
+k=14 inertia=20,498 silhouette=0.0421
+k=15 inertia=20,302 silhouette=0.0469
+k=16 inertia=20,216 silhouette=0.0480
+k=17 inertia=20,008 silhouette=0.0472
+k=18 inertia=19,876 silhouette=0.0516
+k=19 inertia=19,762 silhouette=0.0552
+k=20 inertia=19,670 silhouette=0.0500
+chosen K (best silhouette) = 19
+{'purity': 0.74846978251377, 'adjusted_rand_index': 0.06351645067038528} {'purity': 0.7512222034911342, 'adjusted_rand_index': 0.06433740856458567}

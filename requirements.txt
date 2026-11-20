@@ -1,0 +1,18 @@
+datasets==5.1.0
+joblib==1.6.0
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==26.0.0
+scikit-learn==1.9.1
+sentence-transformers==6.1.0
+streamlit==1.66.0
+wordcloud==1.9.6
+# CUDA 12.8 build: matches NVIDIA driver 570.x. Without it torch falls back to CPU (very slow).
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+xgboost==3.4.1
+ipykernel==7.4.0
+nbformat==5.11.1
+nbconvert==7.17.2
+pypdf==6.21.2

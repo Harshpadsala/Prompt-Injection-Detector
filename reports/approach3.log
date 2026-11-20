@@ -1,0 +1,38 @@
+[features] encoding on cuda
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6656.39it/s]
+[features] encoding on cuda
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5620.12it/s]
+[features] encoding on cuda
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6532.29it/s]
+[knn] best={'n_neighbors': 11} cv_f1=0.8412 time=21s
+OpenBLAS warning: precompiled NUM_THREADS exceeded, adding auxiliary array for thread metadata.
+Note that your application may still crash, if it is calling OpenBLAS from multiple threads in parallel
+To avoid this warning, please rebuild your copy of OpenBLAS with a larger NUM_THREADS setting
+or set the environment variable OPENBLAS_NUM_THREADS to 64 or lower
+[knn] test={'accuracy': 0.8762930836309022, 'precision': 0.8399707091759139, 'recall': 0.925808654622214, 'f1': 0.8808033077377436, 'auroc': 0.95185763741769}
+[knn] external={'accuracy': 0.6132930513595166, 'precision': 0.5175879396984925, 'recall': 0.3916349809885932, 'f1': 0.4458874458874459, 'auroc': 0.6238123826676959}
+/home/hpadsala/MLA/p_Inject/venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py:787: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+[xgboost] best={'max_depth': 6, 'n_estimators': 400} cv_f1=0.9151 time=151s
+[xgboost] test={'accuracy': 0.9360316316991311, 'precision': 0.9355931150189524, 'recall': 0.9347799093561805, 'f1': 0.9351863354037268, 'auroc': 0.9841429439773977}
+[xgboost] external={'accuracy': 0.6691842900302115, 'precision': 0.7682926829268293, 'recall': 0.23954372623574144, 'f1': 0.3652173913043478, 'auroc': 0.6694302295663113}
+k= 2 inertia=23,949 silhouette=0.0412
+k= 3 inertia=23,372 silhouette=0.0374
+k= 4 inertia=23,031 silhouette=0.0306
+k= 5 inertia=22,760 silhouette=0.0304
+k= 6 inertia=22,492 silhouette=0.0333
+k= 7 inertia=22,307 silhouette=0.0263
+k= 8 inertia=22,085 silhouette=0.0310
+k= 9 inertia=21,908 silhouette=0.0279
+k=10 inertia=21,731 silhouette=0.0282
+k=11 inertia=21,594 silhouette=0.0286
+k=12 inertia=21,485 silhouette=0.0280
+k=13 inertia=21,381 silhouette=0.0293
+k=14 inertia=21,253 silhouette=0.0289
+k=15 inertia=21,150 silhouette=0.0313
+k=16 inertia=21,059 silhouette=0.0303
+k=17 inertia=20,960 silhouette=0.0306
+k=18 inertia=20,867 silhouette=0.0309
+k=19 inertia=20,798 silhouette=0.0293
+k=20 inertia=20,726 silhouette=0.0276
+emb_kmeans K=2

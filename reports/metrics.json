@@ -1,0 +1,645 @@
+{
+  "tfidf_logreg": {
+    "best_params": {
+      "clf__C": 10
+    },
+    "test": {
+      "accuracy": 0.9855940905120228,
+      "precision": 0.98865625,
+      "recall": 0.9820885329359905,
+      "f1": 0.9853614476593889,
+      "auroc": 0.9983617819295638
+    },
+    "external": {
+      "accuracy": 0.6933534743202417,
+      "precision": 0.7586206896551724,
+      "recall": 0.33460076045627374,
+      "f1": 0.46437994722955145,
+      "auroc": 0.7344883120348399
+    }
+  },
+  "tfidf_svm": {
+    "best_params": {
+      "clf__estimator__C": 1
+    },
+    "test": {
+      "accuracy": 0.9864369894714258,
+      "precision": 0.9905426987755613,
+      "recall": 0.981902278512448,
+      "f1": 0.9862035636896503,
+      "auroc": 0.9982336809212481
+    },
+    "external": {
+      "accuracy": 0.6948640483383686,
+      "precision": 0.7606837606837606,
+      "recall": 0.33840304182509506,
+      "f1": 0.46842105263157896,
+      "auroc": 0.7656117480011817
+    }
+  },
+  "tfidf_knn": {
+    "best_params": {
+      "clf__n_neighbors": 11
+    },
+    "test": {
+      "accuracy": 0.8823006543961012,
+      "precision": 0.9382010430806601,
+      "recall": 0.8152976966536288,
+      "f1": 0.8724422003720436,
+      "auroc": 0.9573387584183646
+    },
+    "external": {
+      "accuracy": 0.5604229607250756,
+      "precision": 0.41358024691358025,
+      "recall": 0.25475285171102663,
+      "f1": 0.31529411764705884,
+      "auroc": 0.5823208210640669
+    }
+  },
+  "tfidf_random_forest": {
+    "best_params": {
+      "clf__max_depth": null,
+      "clf__n_estimators": 300
+    },
+    "test": {
+      "accuracy": 0.97086634687591,
+      "precision": 0.9732413276298123,
+      "recall": 0.9675917303035947,
+      "f1": 0.9704083062218832,
+      "auroc": 0.9954618705946827
+    },
+    "external": {
+      "accuracy": 0.6435045317220544,
+      "precision": 0.6451612903225806,
+      "recall": 0.22813688212927757,
+      "f1": 0.33707865168539325,
+      "auroc": 0.6632312720965912
+    }
+  },
+  "tfidf_kmeans": {
+    "k": 19,
+    "k_sweep": [
+      {
+        "k": 2,
+        "inertia": 23603.898435111496,
+        "silhouette": 0.04736787746575744
+      },
+      {
+        "k": 3,
+        "inertia": 23080.526320632463,
+        "silhouette": 0.028364052239414433
+      },
+      {
+        "k": 4,
+        "inertia": 22712.503477457227,
+        "silhouette": 0.024481726410708813
+      },
+      {
+        "k": 5,
+        "inertia": 22441.39470265852,
+        "silhouette": 0.024766278462156625
+      },
+      {
+        "k": 6,
+        "inertia": 22129.628719329652,
+        "silhouette": 0.02827092640660647
+      },
+      {
+        "k": 7,
+        "inertia": 21933.65513764698,
+        "silhouette": 0.025876956673492837
+      },
+      {
+        "k": 8,
+        "inertia": 21771.974364372425,
+        "silhouette": 0.03047462492690596
+      },
+      {
+        "k": 9,
+        "inertia": 21304.69391188364,
+        "silhouette": 0.039351157934880816
+      },
+      {
+        "k": 10,
+        "inertia": 21220.51033415092,
+        "silhouette": 0.039523820264510824
+      },
+      {
+        "k": 11,
+        "inertia": 21053.159017007998,
+        "silhouette": 0.03766273193688453
+      },
+      {
+        "k": 12,
+        "inertia": 20947.664022707184,
+        "silhouette": 0.038924032654281265
+      },
+      {
+        "k": 13,
+        "inertia": 20748.93022803828,
+        "silhouette": 0.03939066968684958
+      },
+      {
+        "k": 14,
+        "inertia": 20497.77412243661,
+        "silhouette": 0.042138362444593125
+      },
+      {
+        "k": 15,
+        "inertia": 20301.81192137359,
+        "silhouette": 0.04694499910947217
+      },
+      {
+        "k": 16,
+        "inertia": 20215.786246048872,
+        "silhouette": 0.048000961891434685
+      },
+      {
+        "k": 17,
+        "inertia": 20007.976568214508,
+        "silhouette": 0.04715809524816147
+      },
+      {
+        "k": 18,
+        "inertia": 19875.759568000572,
+        "silhouette": 0.05157265986800344
+      },
+      {
+        "k": 19,
+        "inertia": 19762.39420939865,
+        "silhouette": 0.05523733093457699
+      },
+      {
+        "k": 20,
+        "inertia": 19670.21755852543,
+        "silhouette": 0.05002109767098181
+      }
+    ],
+    "train": {
+      "purity": 0.74846978251377,
+      "adjusted_rand_index": 0.06351645067038528
+    },
+    "test": {
+      "purity": 0.7512222034911342,
+      "adjusted_rand_index": 0.06433740856458567
+    },
+    "clusters": [
+      {
+        "cluster": 0,
+        "size": 14017,
+        "injection_share": 0.7000784761361204,
+        "top_terms": [
+          "if",
+          "else",
+          "for",
+          "in",
+          "print",
+          "def",
+          "to",
+          "the"
+        ]
+      },
+      {
+        "cluster": 1,
+        "size": 9726,
+        "injection_share": 0.46565905819453013,
+        "top_terms": [
+          "scratch",
+          "from scratch",
+          "from",
+          "the",
+          "to",
+          "of",
+          "in",
+          "and"
+        ]
+      },
+      {
+        "cluster": 2,
+        "size": 20146,
+        "injection_share": 0.2529038022436216,
+        "top_terms": [
+          "our",
+          "we",
+          "the",
+          "of",
+          "to",
+          "and",
+          "us",
+          "in"
+        ]
+      },
+      {
+        "cluster": 3,
+        "size": 12079,
+        "injection_share": 0.429340177166984,
+        "top_terms": [
+          "beginning",
+          "the beginning",
+          "to the",
+          "the",
+          "to",
+          "back",
+          "back to",
+          "of"
+        ]
+      },
+      {
+        "cluster": 4,
+        "size": 16967,
+        "injection_share": 0.9710025343313491,
+        "top_terms": [
+          "the",
+          "all",
+          "and",
+          "to",
+          "your",
+          "previous",
+          "on",
+          "of"
+        ]
+      },
+      {
+        "cluster": 5,
+        "size": 10613,
+        "injection_share": 0.39894469047394704,
+        "top_terms": [
+          "let",
+          "mut",
+          "let mut",
+          "vec",
+          "println",
+          "fn",
+          "string",
+          "if"
+        ]
+      },
+      {
+        "cluster": 6,
+        "size": 4727,
+        "injection_share": 0.49270150200973134,
+        "top_terms": [
+          "clean",
+          "with clean",
+          "with",
+          "slate",
+          "clean slate",
+          "restart",
+          "restart with",
+          "sheet"
+        ]
+      },
+      {
+        "cluster": 7,
+        "size": 9487,
+        "injection_share": 0.4735954464003373,
+        "top_terms": [
+          "var",
+          "writeline",
+          "console writeline",
+          "console",
+          "int",
+          "for int",
+          "if",
+          "new"
+        ]
+      },
+      {
+        "cluster": 8,
+        "size": 28778,
+        "injection_share": 0.17746195010077143,
+        "top_terms": [
+          "the",
+          "to",
+          "with",
+          "they",
+          "their",
+          "in",
+          "of",
+          "and"
+        ]
+      },
+      {
+        "cluster": 9,
+        "size": 6338,
+        "injection_share": 0.14531397917324076,
+        "top_terms": [
+          "func",
+          "string",
+          "range",
+          "var",
+          "if",
+          "for",
+          "println",
+          "fmt"
+        ]
+      },
+      {
+        "cluster": 10,
+        "size": 6893,
+        "injection_share": 0.4326127955897287,
+        "top_terms": [
+          "start from",
+          "start",
+          "from the",
+          "point",
+          "the",
+          "from",
+          "commencement",
+          "the commencement"
+        ]
+      },
+      {
+        "cluster": 11,
+        "size": 17760,
+        "injection_share": 0.9057432432432433,
+        "top_terms": [
+          "the",
+          "of",
+          "to",
+          "secrets",
+          "hidden",
+          "in",
+          "and",
+          "where"
+        ]
+      },
+      {
+        "cluster": 12,
+        "size": 8821,
+        "injection_share": 0.46661376261194876,
+        "top_terms": [
+          "outset",
+          "the outset",
+          "from the",
+          "the",
+          "from",
+          "to",
+          "of",
+          "in"
+        ]
+      },
+      {
+        "cluster": 13,
+        "size": 24935,
+        "injection_share": 0.08028875075195509,
+        "top_terms": [
+          "the",
+          "of",
+          "in",
+          "in the",
+          "to",
+          "where",
+          "and",
+          "of the"
+        ]
+      },
+      {
+        "cluster": 14,
+        "size": 9825,
+        "injection_share": 0.41536895674300256,
+        "top_terms": [
+          "log",
+          "console log",
+          "let",
+          "console",
+          "for let",
+          "for",
+          "function",
+          "if"
+        ]
+      },
+      {
+        "cluster": 15,
+        "size": 30595,
+        "injection_share": 0.9461676744566105,
+        "top_terms": [
+          "the",
+          "to",
+          "of",
+          "that",
+          "it",
+          "in",
+          "how",
+          "however"
+        ]
+      },
+      {
+        "cluster": 16,
+        "size": 15228,
+        "injection_share": 0.46998949303913845,
+        "top_terms": [
+          "like",
+          "you",
+          "the",
+          "it",
+          "to",
+          "just",
+          "we",
+          "re"
+        ]
+      },
+      {
+        "cluster": 17,
+        "size": 6293,
+        "injection_share": 0.4980136659780709,
+        "top_terms": [
+          "square",
+          "square one",
+          "one",
+          "from square",
+          "to",
+          "the",
+          "return",
+          "return to"
+        ]
+      },
+      {
+        "cluster": 18,
+        "size": 7846,
+        "injection_share": 0.2912312006117767,
+        "top_terms": [
+          "is",
+          "you",
+          "the",
+          "are",
+          "what",
+          "and",
+          "of",
+          "to"
+        ]
+      }
+    ]
+  },
+  "emb_knn": {
+    "best_params": {
+      "n_neighbors": 11
+    },
+    "test": {
+      "accuracy": 0.8762930836309022,
+      "precision": 0.8399707091759139,
+      "recall": 0.925808654622214,
+      "f1": 0.8808033077377436,
+      "auroc": 0.95185763741769
+    },
+    "external": {
+      "accuracy": 0.6132930513595166,
+      "precision": 0.5175879396984925,
+      "recall": 0.3916349809885932,
+      "f1": 0.4458874458874459,
+      "auroc": 0.6238123826676959
+    }
+  },
+  "emb_xgboost": {
+    "best_params": {
+      "max_depth": 6,
+      "n_estimators": 400
+    },
+    "test": {
+      "accuracy": 0.9360316316991311,
+      "precision": 0.9355931150189524,
+      "recall": 0.9347799093561805,
+      "f1": 0.9351863354037268,
+      "auroc": 0.9841429439773977
+    },
+    "external": {
+      "accuracy": 0.6691842900302115,
+      "precision": 0.7682926829268293,
+      "recall": 0.23954372623574144,
+      "f1": 0.3652173913043478,
+      "auroc": 0.6694302295663113
+    }
+  },
+  "emb_kmeans": {
+    "k": 2,
+    "k_sweep": [
+      {
+        "k": 2,
+        "inertia": 23948.6875,
+        "silhouette": 0.0412435382604599
+      },
+      {
+        "k": 3,
+        "inertia": 23371.73828125,
+        "silhouette": 0.037394631654024124
+      },
+      {
+        "k": 4,
+        "inertia": 23031.41015625,
+        "silhouette": 0.03061673231422901
+      },
+      {
+        "k": 5,
+        "inertia": 22760.080078125,
+        "silhouette": 0.03044951520860195
+      },
+      {
+        "k": 6,
+        "inertia": 22491.84765625,
+        "silhouette": 0.03333655372262001
+      },
+      {
+        "k": 7,
+        "inertia": 22306.98046875,
+        "silhouette": 0.026265662163496017
+      },
+      {
+        "k": 8,
+        "inertia": 22085.171875,
+        "silhouette": 0.031048346310853958
+      },
+      {
+        "k": 9,
+        "inertia": 21908.3046875,
+        "silhouette": 0.02787850983440876
+      },
+      {
+        "k": 10,
+        "inertia": 21731.111328125,
+        "silhouette": 0.028204619884490967
+      },
+      {
+        "k": 11,
+        "inertia": 21594.4609375,
+        "silhouette": 0.02861420251429081
+      },
+      {
+        "k": 12,
+        "inertia": 21484.744140625,
+        "silhouette": 0.027960531413555145
+      },
+      {
+        "k": 13,
+        "inertia": 21381.37109375,
+        "silhouette": 0.029279669746756554
+      },
+      {
+        "k": 14,
+        "inertia": 21252.85546875,
+        "silhouette": 0.028939606621861458
+      },
+      {
+        "k": 15,
+        "inertia": 21149.828125,
+        "silhouette": 0.031342051923274994
+      },
+      {
+        "k": 16,
+        "inertia": 21058.94921875,
+        "silhouette": 0.030282439664006233
+      },
+      {
+        "k": 17,
+        "inertia": 20959.67578125,
+        "silhouette": 0.030615899711847305
+      },
+      {
+        "k": 18,
+        "inertia": 20866.880859375,
+        "silhouette": 0.030933713540434837
+      },
+      {
+        "k": 19,
+        "inertia": 20798.41015625,
+        "silhouette": 0.029283197596669197
+      },
+      {
+        "k": 20,
+        "inertia": 20726.177734375,
+        "silhouette": 0.027560504153370857
+      }
+    ],
+    "train": {
+      "purity": 0.5143216099649908,
+      "adjusted_rand_index": 0.000782953345299335
+    },
+    "test": {
+      "purity": 0.513478720632634,
+      "adjusted_rand_index": 0.0006766248501238415
+    },
+    "external": {
+      "purity": 0.6027190332326284,
+      "adjusted_rand_index": 0.01087463341751767
+    }
+  },
+  "tfidf_xgboost": {
+    "best_params": {
+      "clf__max_depth": 6,
+      "clf__n_estimators": 400
+    },
+    "test": {
+      "accuracy": 0.9793566382124412,
+      "precision": 0.9854981282833685,
+      "recall": 0.9724964301235488,
+      "f1": 0.9789541115260222,
+      "auroc": 0.997790594932064
+    },
+    "external": {
+      "accuracy": 0.6722054380664653,
+      "precision": 0.9791666666666666,
+      "recall": 0.17870722433460076,
+      "f1": 0.3022508038585209,
+      "auroc": 0.6691491085127268
+    }
+  }
+}
