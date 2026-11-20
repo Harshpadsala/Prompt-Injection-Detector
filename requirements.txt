@@ -8,8 +8,9 @@ scikit-learn==1.9.1
 sentence-transformers==6.1.0
 streamlit==1.66.0
 wordcloud==1.9.6
-# CUDA 12.8 build: matches NVIDIA driver 570.x. Without it torch falls back to CPU (very slow).
---extra-index-url https://download.pytorch.org/whl/cu128
+# CPU build: small and runs everywhere, including Streamlit Cloud. For faster training on an
+# NVIDIA GPU, install the CUDA build instead (https://pytorch.org/get-started/locally/).
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.11.0
 xgboost==3.4.1
 ipykernel==7.4.0

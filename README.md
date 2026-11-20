@@ -32,8 +32,7 @@ p_Inject/
 └── requirements.txt
 ```
 
-Trained models (`models/`) and processed data (`data/processed/`) are not included because they
-are large. Step 4 below creates them.
+Random forest and both KNN models are not included because each is larger than GitHub's 100 MB file limit (step 4 recreates them).
 
 ## How to run
 
@@ -82,7 +81,7 @@ To train only the two fastest models, run `python -m scripts.train_tfidf_supervi
 **5. Start the app**
 
 ```bash
-streamlit run app/streamlit_app.py --server.fileWatcherType none
+streamlit run app/streamlit_app.py
 ```
 
 Then open http://localhost:8501 in your browser. Press `Ctrl+C` in the terminal to stop it.

@@ -1,0 +1,3 @@
+[server]
+# The file watcher scans the transformers package and prints torchvision import errors.
+fileWatcherType = "none"
