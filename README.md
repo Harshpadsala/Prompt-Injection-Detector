@@ -7,6 +7,11 @@ Machine learning models that flag prompts trying to make a chatbot ignore its in
 are compared: TF-IDF with supervised classifiers, TF-IDF with K-means clustering, and sentence
 embeddings. A Streamlit app lets you test any prompt.
 
+Live app: https://prompt-injection-detector-harshpadsala.streamlit.app/
+
+The live app offers 4 of the 7 models, because random forest and both KNN models are too large to
+deploy. To use all 7, train them locally (step 4 below) and run the app on your machine.
+
 Data (downloaded automatically when you run the code):
 - Main dataset: https://huggingface.co/datasets/jayavibhav/prompt-injection
 - External test set: https://huggingface.co/datasets/deepset/prompt-injections

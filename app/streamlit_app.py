@@ -65,15 +65,6 @@ def detector_page() -> None:
         st.caption("Impact = change in log-odds of Injection when the word is removed. "
                    "Positive pushes towards Injection, negative towards Safe.")
 
-        attack = result["attack_type"]
-        if attack:
-            st.subheader("Closest prompt group (K-means)")
-            st.write(f"Key terms: **{', '.join(attack['top_terms'])}**")
-            st.write(f"{attack['injection_share']:.0%} of the {attack['size']:,} training "
-                     "prompts in this group are injections.")
-            st.caption("Most groups reflect wording and topic; only a few match a specific "
-                       "attack mechanism.")
-
 
 # Short interpretations shown under the tables and plots of the comparison page.
 METRICS_NOTES = {
@@ -132,8 +123,8 @@ def comparison_page() -> None:
     if cluster_rows:
         st.dataframe(pd.DataFrame(cluster_rows).T, width="stretch")
         st.write("Clusters scored against the true labels on the main test set. TF-IDF clusters "
-                 "agree with the labels only slightly (ARI 0.064), and embedding clusters not at "
-                 "all (ARI 0.0007).")
+                 "partly agree with the labels (ARI 0.064, where about 0.10 is the maximum possible "
+                 "with 19 clusters), and embedding clusters not at all (ARI 0.0007).")
 
     for fig, title, note in K_SWEEP_PLOTS:
         if (FIGURES_DIR / fig).exists():
@@ -224,6 +215,9 @@ EDA_PLOTS = [
     ("eda_top_words.png", "Most common words by class",
      "Injections favour words like secrets, hidden, reveal and ignore, but frequent words such "
      "as start and let appear in both classes, so single words cannot separate them."),
+    ("eda_word_clouds.png", f"Word clouds of {MAIN_DATASET}",
+     "Secret, hidden and reveal dominate the injections, but start, beginning, secret and hidden "
+     "are also large in safe prompts. The classes differ mainly in how words are combined."),
 ]
 
 

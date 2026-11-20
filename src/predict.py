@@ -80,5 +80,4 @@ class PromptDetector:
             "confidence": p_inj if label else 1 - p_inj,
             "injection_probability": p_inj,
             "top_words": self.top_words(name, text, top_n),
-            "attack_type": self.attack_type(text),
         }
