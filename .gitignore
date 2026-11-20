@@ -17,3 +17,4 @@ models/emb_knn.joblib
 .streamlit/secrets.toml
 .env
 .DS_Store
+.gitignore
